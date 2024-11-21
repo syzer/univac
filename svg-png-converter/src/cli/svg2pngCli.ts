@@ -47,7 +47,7 @@ export async function svg2pngCli(o: SVG2PNGOptions) {
     }))
 
   } catch (error) {
-    fail(error)
+    fail(error as Error)
   }
 }
 

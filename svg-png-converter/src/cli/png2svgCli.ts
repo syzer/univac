@@ -40,7 +40,7 @@ export async function png2svgCli(o: PNG2SVGOptions) {
       }
     }))
   } catch (error) {
-    fail(error)
+    fail(error as Error)
   }
 }
 

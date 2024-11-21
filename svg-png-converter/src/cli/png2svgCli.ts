@@ -29,10 +29,10 @@ export async function png2svgCli(o: PNG2SVGOptions) {
         if (o.output) {
           const file = join(o.output, basename(result.name))
           o.debug && console.log('Writing ' + file)
-          writeFileSync(file, result.content?.content)
+          writeFileSync(file, result.content && result.content.content)
         }
         else {
-          process.stdout.write(result.content && result.content?.content.toString() || '')
+          process.stdout.write(result.content && result.content.content && result.content.content.toString() || '')
         }
       } catch (error) {
         console.error('ERROR while rendering file ' + input.name)

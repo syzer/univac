@@ -1,6 +1,6 @@
 import test from 'ava'
 import { readFileSync, writeFileSync } from 'fs'
-import { png2svg } from '../src'
+import { png2svg } from '../src/png2svg'
 
 test('should shrink when optimize option passed with potrace and png input', async t => {
   const r1 = await png2svg({ tracer: 'potrace', input: readFileSync('test/assets/lisa.png') })

@@ -1,7 +1,7 @@
 import test from 'ava'
 import fileType from 'file-type'
 import { readFileSync, writeFileSync } from 'fs'
-import { svg2png } from '../src'
+import { svg2png } from '../src/svg2png'
 import { base64ToUrl, urlToBase64, urlToData } from '../src/base64'
 import { BufferClass } from '../src/buffer'
 import { svg } from './assets/code'

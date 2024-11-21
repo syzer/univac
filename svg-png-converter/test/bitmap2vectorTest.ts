@@ -1,7 +1,8 @@
 import test from 'ava'
 import { existsSync, readFileSync, unlinkSync, writeFileSync } from 'fs'
 import { tryTo } from 'misc-utils-of-mine-generic'
-import { png2svg } from '../src'
+import { png2svg } from '../src/png2svg'
+
 
 test('should render svg form png and jpeg buffer ', async t => {
   tryTo(() => {

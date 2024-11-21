@@ -25,7 +25,7 @@ export async function png2svg(options: PNG2SVGOptions) {
     return result
   }
   catch (error) {
-    console.error('ERROR PngToSvg', error, error.stack)
+    console.error('ERROR PngToSvg', error, (error as Error).stack)
     throw error
   }
 }
